@@ -9,4 +9,4 @@ def fizzbuzz():
         elif j % 5 == 0:
             print("Buzz ", end="")
         else:
-            print("{:d} ".format(i), end="")
+            print("{:d} ".format(j), end="")
