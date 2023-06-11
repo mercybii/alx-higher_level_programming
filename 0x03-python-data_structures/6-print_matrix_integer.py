@@ -8,5 +8,5 @@ def print_matrix_integer(matrix=[[]]):
                 endCh = ' '
             else:
                 endCh = ' '
-                print("{:d}".format(matrix[i][i]), end=endCh)
-            print(""0
+                print("{:d}".format(matrix[i][k]), end=endCh)
+            print("")
