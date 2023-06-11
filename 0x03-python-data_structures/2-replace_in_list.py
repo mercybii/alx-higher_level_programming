@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
 def replace_in_list(my_list, idx, element):
-    my_idx = 0
-    for i in my_list:
-        if my_idx == idx:
-            my_list[my_idx] = element
+    i = 0
+    for ele in my_list:
+        if i == idx:
+            my_list[i] = element
             return (my_list)
-        my_idx += 1
+        i += 1
     return (my_list)
