@@ -10,4 +10,4 @@ def print_matrix_integer(matrix=[[]]):
             else:
                 endCh = ''
             print("{:d}".format(matrix[i][j]), end=endCh)
-            print("")
+        print("")
