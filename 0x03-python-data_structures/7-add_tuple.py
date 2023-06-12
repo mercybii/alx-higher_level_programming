@@ -15,5 +15,8 @@ def add_tuple(tuple_a=(), tuple_b=()):
             b = tuple_b[i]
 
         if (i == 0):
+            new = (a + b)
+        else:
             new = (new, a + b)
+
     return (new)
