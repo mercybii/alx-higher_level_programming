@@ -6,6 +6,6 @@ def best_score(a_dictionary):
     if type(a_dictionary) is dict:
         for (key, value) in a_dictionary.items():
             if value > first:
-            first = value
-            second = key
+                first = value
+                second = key
     return (second)
