@@ -3,10 +3,9 @@ def safe_print_list(my_list=[], x=0):
     printed = 0
     for i in range(x):
         try:
-
             print("{}".format(my_list[i]), end="")
             printed += 1
-            excep IndexError:
-                break
-            print("")
-            return (printed)
+        except IndexError:
+            break
+    print("")
+    return (printed)
