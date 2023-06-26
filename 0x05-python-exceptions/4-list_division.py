@@ -4,13 +4,13 @@ def list_division(my_list_1, my_list_2, list_length):
     for i in range(0, list_length):
         try:
             c = my_list_1[i] / my_list_2[i]
-        expect TypeError:
+        except TypeError:
             print("Wrong Type")
             c = 0
-        expect ZeroDivisionError:
+        except ZeroDivisionError:
             print("Division by 0")
             c = 0
-        expect IndexError:
+        except IndexError:
             print("out of range")
             c = 0
         finally:
