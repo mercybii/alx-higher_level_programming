@@ -3,7 +3,10 @@
 
 
 class Square:
-    """class of the square"""
+    """class of the square
+    attributes:
+        side of the square
+        """
     def __init__(self, size=0):
         """"attributes and methodwes"""
 
