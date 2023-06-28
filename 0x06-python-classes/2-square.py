@@ -5,7 +5,7 @@
 class Square:
     """Atribute defination"""
     def __init__(self, size=0):
-        if Type(size) is not int:
+        if type(size) is not int:
             raise TypeError("size must be an integer")
         else:
             if size < 0:
