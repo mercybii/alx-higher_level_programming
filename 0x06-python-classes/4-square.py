@@ -13,7 +13,7 @@ def area(self):
     """the area of the square"""
 
 
-return (self.__size) ** 2
+    return (self.__size) ** 2
 
 
 @property
