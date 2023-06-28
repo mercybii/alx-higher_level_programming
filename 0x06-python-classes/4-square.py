@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """ class defination of a square"""
 
-
+class Square:
+    """class of the square"""
 def __init__(self, size=0):
     """"attributes and methodwes"""
     self.size = size
