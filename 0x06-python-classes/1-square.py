@@ -2,8 +2,7 @@
 '''class squre that define a squre'''
 
 
-class square:
+class Square:
     '''the defination of the attributes'''
     def __init__(self, size):
-
         self.__size = size
