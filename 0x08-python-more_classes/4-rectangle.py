@@ -1,18 +1,17 @@
 #!/usr/bin/python3
 """
-Defines a class Rectangle
-the perimeter
+Defines a class Rectangle 
 """
 
 
 class Rectangle:
     """
-        Defineing  the  class Rectangle
+        Defineing a class Rectangle
     """
     def __init__(self, width=0, height=0):
         """
-        Initialize the attributes of a Rectangle
-            width(int):
+        Initialize
+            width(int): 
             height(int):
         """
         self.width = width
@@ -21,14 +20,14 @@ class Rectangle:
     @property
     def width(self):
         """
-            Returning width of a rectangle
+            Returns width of a rectangle
         """
         return self.__width
 
     @width.setter
     def width(self, value):
         """
-        Seting the new width of a rectangle
+        Sets the new width of a rectangl
             value(int): The new width of a rectangle
         """
         if not isinstance(value, int):
@@ -40,7 +39,7 @@ class Rectangle:
     @property
     def height(self):
         """
-            Returning the height of a rectangle
+            Returns the height of a rectangle
         """
         return self.__height
 
@@ -75,12 +74,17 @@ class Rectangle:
 
     def __str__(self):
         """
-        Returns the printable representation of the rectangle
-        Represents the rectangle with '#'
+            Returns the string representation of a rectangle
         """
         if self.__width == 0 or self.__height == 0:
-            return ""
-        rect_str = ''
+            return ''
+        rect_str = ""
         for _ in range(self.__height):
             rect_str += "#" * self.__width + "\n"
         return rect_str.rstrip()
+
+    def __repr__(self):
+        """
+            Returning strin representatio
+        """
+        return "Rectangle({}, {})".format(self.__width, self.__height)
