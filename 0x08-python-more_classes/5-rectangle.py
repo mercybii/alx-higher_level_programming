@@ -6,12 +6,12 @@ Defines a class Rectangle
 
 class Rectangle:
     """
-        Defineing a class Rectangle
+        Defines a class Rectangle
     """
     def __init__(self, width=0, height=0):
         """
-        Initialize
-            width(int): 
+        Initialize the attributes of a Rectangle
+            width(int):
             height(int):
         """
         self.width = width
@@ -20,15 +20,14 @@ class Rectangle:
     @property
     def width(self):
         """
-        Returns width of a rectangle 
+            Returns width of a rectangle
         """
         return self.__width
 
     @width.setter
     def width(self, value):
         """
-        Sets the new width of a rectangl
-            value(int): The new width of a rectangle
+        Sets the new width of a rectangle
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -47,7 +46,7 @@ class Rectangle:
     def height(self, value):
         """
         Returns the height of a rectangle
-            value(int): The new height of a rectangle
+            value(int)
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
@@ -74,7 +73,7 @@ class Rectangle:
 
     def __str__(self):
         """
-            Returns the string representation of a rectangle
+            Returns the string of a rectangle
         """
         if self.__width == 0 or self.__height == 0:
             return ''
@@ -85,6 +84,12 @@ class Rectangle:
 
     def __repr__(self):
         """
-            Returning strin representatio
+            Return strin representatio
         """
         return "Rectangle({}, {})".format(self.__width, self.__height)
+
+    def __del__(self):
+        """
+            Print a message when an instance is deleted
+        """
+        print("Bye rectangle...")
