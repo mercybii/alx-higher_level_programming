@@ -2,6 +2,8 @@
 """
 is a function that look for attributes
 """
+
+
 def lookup(obj):
     """
     return list of objects
