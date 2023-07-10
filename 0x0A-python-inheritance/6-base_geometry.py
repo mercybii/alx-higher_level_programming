@@ -10,9 +10,9 @@ class BaseGeometry:
     """
 
     def area(self):
-    """
-    claculate the area of the geometry
+        """
+        clacculate the area of geometry
 
-    return:none
-    """
+        return:non
+        """
         raise Exception("area() is not implemented")
