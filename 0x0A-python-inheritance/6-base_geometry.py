@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-class basegeometry
+define class basegeometry
 """
 
 
@@ -9,7 +9,7 @@ class BaseGeometry:
     represent a base geometry
     """
 
-    def area(self)
+    def area(self):
     """
     claculate the area of the geometry
 
