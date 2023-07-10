@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-function that return true 
+function that return true
 """
 
 
