@@ -15,4 +15,4 @@ class BaseGeometry:
 
     return:none
     """
-    raise Exception("area() is not implemented")
+        raise Exception("area() is not implemented")
