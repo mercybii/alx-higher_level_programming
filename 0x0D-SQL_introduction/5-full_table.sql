@@ -1,2 +1,2 @@
--- print the full description
-SHOW CREATE TABLE 'first_table';
+-- Prints the full description of the table from database
+SHOW CREATE TABLE `first_table`;

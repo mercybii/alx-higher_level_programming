@@ -1,2 +1,2 @@
--- list all row of 'first_table
-SELECT * FROM 'first_table';
+-- Lists all rows of `first_table` from `hbtn_0c_0`
+SELECT * FROM `first_table`;
