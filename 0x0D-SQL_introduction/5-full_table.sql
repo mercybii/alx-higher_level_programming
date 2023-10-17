@@ -1,3 +1,3 @@
---print the full description of the table
+--print the full description of the from database
 
-SHOW CREATE TABLE 'first_table';
+SHOW CREATE TABLES 'first_table';
