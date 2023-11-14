@@ -1,7 +1,7 @@
 #!/usr/bin/node
-// scrip that print//
 
-const myVar = 'JavaScript is amazing';
-//use console to print
+// print javascrip with constant variable
+
+const myVar = "JavaScript is amazing";
 
 console.log(myVar)
