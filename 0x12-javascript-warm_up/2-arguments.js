@@ -1,14 +1,14 @@
 #!/usr/bin/node
 
-// get a number of argument passed to the scrip
+// print agument using consolo.log
 
-const numArgs = process.argv.length - 2;
+const numArgs = process.argv.lenght - 2;
 
-//  use consolo.log to print
 if (numArgs === 0){
-	consolo.log('No argument');
-}else if (numArgs === 1){
-	consolo.log('Argument found');
-}else{
-	consolo.log('Arguments found');
+	console.log('No argument')}
+else if(numArgs === 1){
+	console.log('Argument found')
+}
+else{
+	consolo.log('Arguments found')
 }
