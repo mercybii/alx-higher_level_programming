@@ -1,50 +1,50 @@
 #!/usr/bin/python3
 """
-List all states from the database hbtn_0e_0_usa
+Lists all states with a name starting with 'N' (upper N)
 """
-
 import MySQLdb
 import sys
 
 if __name__ == "__main__":
-    """
-    Get command line arguments
-    """
-    mysql_username = sys.argv[1]
-    mysql_password = sys.argv[2]
-    database_name = sys.argv[3]
 
     """
-    Connect to the database
+    Get MySQL credentials from the cmd line args
+    """
+    username = sys.argv[1]
+    password = sys.argv[2]
+    db_name = sys.argv[3]
+
+    """
+    Connect to MySQL server
     """
     db = MySQLdb.connect(
         host="localhost",
         port=3306,
-        user=mysql_username,
-        passwd=mysql_password,
-        db=database_name
+        user=username,
+        passwd=password,
+        db=db_name
     )
 
     """
-    Create a cursor object
+    Create a cursor object to interact with the database
     """
     cursor = db.cursor()
 
     """
-    Execute the query
+    Execute the SQL query to retrieve states starting with 'N'
     """
-    query = "SELECT * FROM states ORDER BY id ASC"
+    query = "SELECT * FROM `states` WHERE name LIKE BINARY 'N%' ORDER BY `id`"
     cursor.execute(query)
 
     """
-    Fetch all the rows
+    Fetch all the results
     """
-    rows = cursor.fetchall()
+    results = cursor.fetchall()
 
     """
     Display the results
     """
-    for row in rows:
+    for row in results:
         print(row)
 
     """
